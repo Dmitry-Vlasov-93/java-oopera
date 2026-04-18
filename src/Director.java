@@ -14,4 +14,8 @@ public class Director extends Person {
     public void setNumberOfShows(int numberOfShows) {
         this.numberOfShows = numberOfShows;
     }
+
+    public int getNumberOfShows() {
+        return numberOfShows;
+    }
 }
