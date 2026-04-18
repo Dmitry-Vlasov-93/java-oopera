@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
 public class Show {
-    private String title;
-    private int duration;
-    private Director director;
-    private ArrayList<Actor> listOfActors = new ArrayList<>();
+    private final String title;
+    private final int duration;
+    private final Director director;
+    private final ArrayList<Actor> listOfActors = new ArrayList<>();
 
     public Show(String title, int duration, Director director){
         this.title = title;
@@ -29,7 +29,7 @@ public class Show {
 
     public void changeActor(Actor actor, String surname){
         for (Actor oldActor : listOfActors ){
-            if(oldActor.surname.equals(surname)){
+            if(oldActor.getSurname().equals(surname)){
                 listOfActors.set(listOfActors.indexOf(oldActor),actor);
                 System.out.println("Актер успешно заменен.");
                 return;
@@ -40,5 +40,13 @@ public class Show {
 
     public void printDirector(){
         System.out.println(director);
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public int getDuration() {
+        return duration;
     }
 }
