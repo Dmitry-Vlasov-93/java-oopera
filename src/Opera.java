@@ -1,7 +1,7 @@
 
 
 public class Opera extends MusicalShow{
-    int choirSize;
+    private int choirSize;
 
     public Opera(Person musicAuthor, String librettoText, String title, int duration,
                  Director director, int choirSize) {

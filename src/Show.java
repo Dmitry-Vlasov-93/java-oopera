@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
 public class Show {
-    String title;
-    int duration;
-    Director director;
-    ArrayList<Actor> listOfActors = new ArrayList<>();
+    private String title;
+    private int duration;
+    private Director director;
+    private ArrayList<Actor> listOfActors = new ArrayList<>();
 
     public Show(String title, int duration, Director director){
         this.title = title;
@@ -14,8 +14,6 @@ public class Show {
 
     public void printActorsList(){
         for (Actor actor : listOfActors){
-            //System.out.println(actor.surname + " " + actor.name + " " + "(" + actor.height + ")" );
-            //специально оставил, хочу спросить чем так плохо просто изначально так сделал и в printDirector тоже самое
             System.out.println(actor);
         }
     }
@@ -41,7 +39,6 @@ public class Show {
     }
 
     public void printDirector(){
-        //System.out.println(director.surname +" "+ director.name);
         System.out.println(director);
     }
 }

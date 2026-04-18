@@ -1,8 +1,8 @@
 
 
 public class MusicalShow extends Show{
-    Person musicAuthor;
-    String librettoText;
+    private Person musicAuthor;
+    private String librettoText;
 
     public MusicalShow(Person musicAuthor, String librettoText, String title, int duration,
                        Director director){
